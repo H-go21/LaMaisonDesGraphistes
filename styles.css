@@ -1,0 +1,112 @@
+/* Styles généraux */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Fond neutre pour mettre en valeur les couleurs */
+    color: #333;
+}
+
+/* En-tête */
+header {
+    background: #007f00;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo h1 {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 2em;
+    color: #fff;
+}
+
+/* Contenu principal */
+main {
+    padding: 20px;
+    background: #f8f9fa; /* Couleur douce pour équilibrer le contraste */
+}
+
+/* Styles pour les articles */
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.article-link {
+    text-decoration: none;
+    color: inherit;
+    width: calc(25% - 15px); /* 4 articles par ligne */
+    max-width: 200px;
+}
+
+.article-detail {
+    background-color: #ffffff;
+    padding: 10px;
+    border: 2px solid #d4af37; /* Bordure dorée */
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.article-detail img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+    max-height: 150px; /* Limite la hauteur des images */
+}
+
+.article-detail p {
+    margin: 10px 0 0;
+    font-size: 0.9em;
+    color: #007f00; /* Texte vert */
+}
+
+/* Pied de page */
+footer {
+    background: #007f00;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+/* Styles pour les écrans de moins de 768px */
+@media screen and (max-width: 768px) {
+    .article-link {
+        width: calc(33.333% - 15px); /* 3 articles par ligne */
+    }
+}
+
+/* Styles pour les écrans de moins de 480px */
+@media screen and (max-width: 480px) {
+    .article-link {
+        width: calc(50% - 15px); /* 2 articles par ligne */
+    }
+}
+
+/* Liens dans le texte */
+a {
+    color: #d4af37; /* Or */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #007f00; /* Vert */
+}
+
+nav ul {
+    list-style-type: none; /* Supprime les puces */
+    margin: 0; /* Enlève les marges par défaut */
+    padding: 0; /* Enlève les espacements internes */
+    display: flex; /* Pour aligner les éléments horizontalement si nécessaire */
+    align-items: center; /* Centrer verticalement les éléments si besoin */
+}
